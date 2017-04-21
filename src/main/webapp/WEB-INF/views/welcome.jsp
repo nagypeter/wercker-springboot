@@ -63,8 +63,8 @@
               </p>              
               <div>
                 <img max-width="100%" height="auto"
-                  src="images/occs.wercker.png"><br> <a
-                  </a><br>
+                  src="images/occs.wercker.png"><br>
+                  <br>
               </div>
 
             </div>
