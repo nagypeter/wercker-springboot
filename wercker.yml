@@ -1,0 +1,17 @@
+box: combient/java-mvn
+build:
+  steps:
+    # Build Spring Boot Sample application
+    - script:
+        name: Maven install
+        code: mvn install
+push:
+  steps:
+    # Push to public docker repo
+    - internal/docker-push:
+        username: $DOCKER_USERNAME
+        password: $DOCKER_PASSWORD
+        tag: latest
+        repository: $DOCKER_REPOSITORY
+        registry: https://index.docker.io/v1/
+        cmd: java -jar  /pipeline/source/target/springbootdemo-0.0.1.war
