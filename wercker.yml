@@ -15,3 +15,14 @@ push:
         repository: $DOCKER_REPOSITORY
         registry: https://index.docker.io/v1/
         cmd: java -jar  /pipeline/source/target/springbootdemo-0.0.1.war
+deploy-accs:
+  steps:
+    # Deploy to Oracle Application Container Cloud
+    - peternagy/oracle-accs-deploy@1.0.1:
+        opc_user: $OPC_USERNAME
+        opc_password: $OPC_PASSWORD
+        rest_url: $REST_URL
+        domain: $IDENTITY_DOMAIN
+        application_name: springboot-accs-demo
+        application_type: java
+        file: springbootdemo-0.0.1.zip
