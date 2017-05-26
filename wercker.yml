@@ -26,3 +26,12 @@ deploy-accs:
         application_name: springboot-accs-demo
         application_type: java
         file: springbootdemo-0.0.1.zip
+restart-occs:
+  steps:
+    # Manage Oracle Container Cloud Service container
+    - peternagy/oracle-occs-container-util:
+        occs_user: $OCCS_USER
+        occs_password: $OCCS_PASSWORD
+        rest_server_url: $REST_SERVER_URL
+        function: $FUNCTION
+		    deployment_name: $DEPLOYMENT_NAME        
