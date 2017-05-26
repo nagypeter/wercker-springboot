@@ -36,7 +36,7 @@
 
       <div class="blueBannerHeading">
         <h1 class="blueBannerTitleWithSubtitle">
-          <a style="color: #ffffff">Oracle Container Cloud Service + Wercker (Step)</a>
+          <a style="color: #ffffff">Oracle Container Cloud Service + Wercker</a>
         </h1>
       </div>
 
@@ -49,7 +49,7 @@
   <div class="container serviceContainer" style="margin-top: 150px;">
     <div class="overviewLayout">
       <div>
-              <br>SpringBoot application demo by PETER NAGY. Current server time: <%= new java.util.Date() %> <br>
+              <br>SpringBoot application demo. Current server time: <%= new java.util.Date() %> <br>
               <br>
               <p>
                 <span style="color: #333; text-decoration: none">Build faster and release often with Wercker's Docker-Native 
